@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% load static tailwind_tags %}
-    {% tailwind_css %}
+{% extends 'blogs/base.html' %}
 
-<title>Tailwind check</title>
-</head>
-<body>
+{% block title %}Blog Home{% endblock %}
 
-    <h1 class="bg-blue-500">  Tailwind Check!</h1>
-    
-</body>
-</html>
+{% block content %}
+    <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">Welcome to My Blog</h1>
+
+{% endblock %}
